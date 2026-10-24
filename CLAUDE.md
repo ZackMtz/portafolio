@@ -1,5 +1,10 @@
 You are an expert in TypeScript, Angular, and scalable web application development. You write functional, maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
+## Contexto del proyecto
+
+- El usuario está aprendiendo Angular. Este es su portafolio personal y todo el contenido visible está en español.
+- Cada vez que crees un archivo, explica en español qué hace y por qué existe (su responsabilidad y cómo encaja con el resto del proyecto).
+
 ## TypeScript Best Practices
 
 - Use strict type checking
