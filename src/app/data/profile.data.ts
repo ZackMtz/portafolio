@@ -2,10 +2,10 @@ import { Profile } from '../models/profile.model';
 
 // Datos de ejemplo: reemplázalos por los tuyos.
 export const PROFILE: Profile = {
-  name: 'Tu Nombre',
+  name: 'Jose David Martinez Guayabo',
   role: 'Desarrollador de Software',
   description:
-    'Construyo aplicaciones web accesibles y mantenibles con Angular y TypeScript.',
+    'Construyo aplicaciones web accesibles y mantenibles.',
   availableForWork: true,
   photo: {
     src: '/images/foto.webp',
@@ -13,10 +13,10 @@ export const PROFILE: Profile = {
     width: 320,
     height: 320,
   },
-  email: 'correo@ejemplo.com',
+  email: 'jdm.guayabo@gmail.com',
   links: {
-    linkedin: 'https://www.linkedin.com/in/tu-usuario',
-    github: 'https://github.com/tu-usuario',
+    linkedin: 'https://www.linkedin.com/in/jose-david-martinez-guayabo-b2134b3ab/',
+    github: 'https://github.com/ZackMtz?tab=overview&from=2026-10-01&to=2026-10-24',
     cv: '/cv.pdf',
   },
   about: [
