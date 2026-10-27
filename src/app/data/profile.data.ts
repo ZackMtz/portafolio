@@ -8,7 +8,7 @@ export const PROFILE: Profile = {
     'Soy de Bucaramanga, Colombia, y fui coautor del sistema que hoy usa la Oficina de Calidad de la UDI. Me enfoco en backend y estoy profundizando en Java y Spring Boot.',
   availableForWork: true,
   photo: {
-    src: 'C:\Users\Zacko\Downloads\fotico.webp',
+    src: '/images/fotico.webp',
     alt: 'Fotografía de Jose David Martinez Guayabo',
     width: 320,
     height: 320,

@@ -1,4 +1,12 @@
 <header class="mx-auto max-w-2xl px-4 pt-32 pb-16">
+    <img [ngSrc]="profile.photo.src"
+        [width]="profile.photo.width"
+        [height]="profile.photo.height"
+        [alt]="profile.photo.alt"
+        priority
+        class="mb-6 size-32 rounded-full object-cover"
+    />
+
     @if (profile.availableForWork){
         <p class="inline-block rounded-full border border-line bg-surface px-3 py-1 text-sm text-ink">
             Disponible para trabajar
