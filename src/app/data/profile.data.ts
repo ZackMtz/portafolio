@@ -8,7 +8,7 @@ export const PROFILE: Profile = {
     'Soy de Bucaramanga, Colombia, y fui coautor del sistema que hoy usa la Oficina de Calidad de la UDI. Me enfoco en backend y estoy profundizando en Java y Spring Boot.',
   availableForWork: true,
   photo: {
-    src: '/images/foto.webp',
+    src: 'C:\Users\Zacko\Downloads\fotico.webp',
     alt: 'Fotografía de Jose David Martinez Guayabo',
     width: 320,
     height: 320,
@@ -17,7 +17,7 @@ export const PROFILE: Profile = {
   links: {
     linkedin: 'https://www.linkedin.com/in/jose-david-martinez-guayabo-b2134b3ab/',
     github: 'https://github.com/ZackMtz',
-    cv: '/cv.pdf',
+    cv: 'C:\Users\Zacko\Downloads\HV Jose Martinez.pdf',
   },
   about: [
     'Estudié Ingeniería de Sistemas en la UDI, donde fui coautor del sistema de la Oficina de Calidad: una API REST de 257 servicios con 554 pruebas automatizadas, que hoy está en producción.',
