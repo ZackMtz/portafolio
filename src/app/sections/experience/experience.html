@@ -1,0 +1,7 @@
+<section id="experiencia" aria-labelledby="experiencia-titulo" class="mx-auto max-w-2xl scroll-mt-24 px-4 py-16">
+    <h2 id="experiencia-titulo" class="mb-8 text-2xl font-semibold text-ink">Experiencia</h2>
+
+    @for (item of experience; track item.company){
+        <app-timeline-item [experience] = "item" />
+    }
+</section>
