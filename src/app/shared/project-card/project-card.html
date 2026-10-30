@@ -1,0 +1,47 @@
+<article class="flex flex-col rounded-lg border border-line bg-surface p-5">
+    @if(project().image; as image){
+        <img [ngSrc]="image.src" 
+            [width]="image.width"
+            [height]="image.height"
+            [alt]="image.alt"
+            class="mb-4 aspect-video w-full rounded-md object-cover" 
+        />
+    } @else{
+        <div
+            class="mb-4 flex aspect-video w-full items-center justify-center rounded-md bg-line text-4xl font-semibold text-muted"
+            aria-hidden="true"
+        >
+        {{ project().title.charAt(0) }}
+        </div>
+    }
+    <h3 class="text-lg font-semibold text-ink">{{ project().title }}</h3>
+    <p class="mt-2 text-muted">{{ project().description }}</p>
+
+    <ul class="mt-4 flex flex-wrap gap-2">
+        @for (tech of project().technologies; track tech){
+            <li><app-tech-tag [name]="tech" /></li>
+        }
+    </ul>
+
+    <div class="mt-5 flex gap-4 text-sm">
+        @if (project().repoUrl; as repoUrl){
+            <a [href]="repoUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded text-ink underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+                Código<span class="sr-only"> de {{ project().title }} (se abre en una pestaña nueva)</span>
+            </a>
+        }
+
+        @if (project().demoUrl; as demoUrl){
+            <a [href]="demoUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded text-ink underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+                Demo<span class="sr-only"> de {{ project().title }} (se abre en una pestaña nueva)</span>
+            </a>
+        }
+    </div>
+</article>
