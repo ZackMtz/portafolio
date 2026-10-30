@@ -1,0 +1,9 @@
+<section id="sobre-mi" aria-labelledby="sobre-mi-titulo" class="mx-auto max-w-2xl scroll-mt-24 px-4 py-16">
+    <h2 id="sobre-mi-titulo" class="mb-8 text-2xl font-semibold text-ink">Sobre mí</h2>
+
+    <div class="space-y-4">
+        @for (paragraph of profile.about; track $index){
+            <p class="text-muted">{{ paragraph }}</p>
+        }
+    </div>
+</section>

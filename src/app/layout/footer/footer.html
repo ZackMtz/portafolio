@@ -1,0 +1,38 @@
+<footer id="contacto" aria-labelledby="contacto-titulo" class="mx-auto max-w-2xl scroll-mt-24 px-4 py-16">
+    <h2 id="contacto-titulo" class="mb-8 text-2xl font-semibold text-ink">Contacto</h2>
+
+   <p class="text-muted">
+    ¿Tienes un proyecto o una oportunidad en mente? Escríbeme y conversamos.
+   </p>
+
+   <p class="mt-4">
+    <a [href]=" 'mailto:' + profile.email"
+        class="rounded text-ink underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+    >
+        {{ profile.email }}</a>
+   </p>
+
+   <ul class="mt-6 flex gap-4 text-sm">
+    <li>
+        <a [href]="profile.links.linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded text-ink underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+            LinkedIn<span class="sr-only"> (se abre en una pestaña nueva)</span>
+        </a>
+    </li>
+    <li>
+            <a
+                [href]="profile.links.github"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded text-ink underline underline-offset-4 hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+                GitHub<span class="sr-only"> (se abre en una pestaña nueva)</span>
+            </a>
+        </li>
+
+   </ul>
+   <p class="mt-12 border-t border-line pt-6 text-sm text-muted">© {{ year }} {{ profile.name }}</p>
+</footer>
