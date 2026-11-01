@@ -24,7 +24,7 @@ export const EXPERIENCE: Experience[] = [
       'Práctica profesional en el área de TI de la autoridad ambiental del área metropolitana de Bucaramanga, apoyando la modernización de sus servicios digitales.',
     achievements: [
       'Migración del portal institucional a la Sede Electrónica de MinTIC, organizando los contenidos según el Índice de Transparencia.',
-      'Intalación, documentación y pruebas con usuarios de Formbricks y LibreBooking para distintas áreas de la entidad.',
+      'Instalación, documentación y pruebas con usuarios de Formbricks y LibreBooking para distintas áreas de la entidad.',
       'Definición de los requerimientos y la configuración de un prototipo de agente conversacional local con Ollama para consultas sobre trámites ambientales.',
     ],
     technologies: ['Ollama', 'Formbricks', 'LibreBooking', 'PHP', 'Docker', 'PostgreSQL'],
