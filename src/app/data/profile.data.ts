@@ -17,7 +17,7 @@ export const PROFILE: Profile = {
   links: {
     linkedin: 'https://www.linkedin.com/in/jose-david-martinez-guayabo-b2134b3ab/',
     github: 'https://github.com/ZackMtz',
-    cv: 'C:\Users\Zacko\Downloads\HV Jose Martinez.pdf',
+    cv: '/cv-jose-martinez.pdf',
   },
   about: [
     'Estudié Ingeniería de Sistemas en la UDI, donde fui coautor del sistema de la Oficina de Calidad: una API REST de 257 servicios con 554 pruebas automatizadas, que hoy está en producción.',

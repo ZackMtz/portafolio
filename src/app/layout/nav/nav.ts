@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, afterNextRender } from '@angular/core';
+import { ScrollSpy } from '../../services/scroll-spy';
 
 interface NavLink{
   id: string;
@@ -19,5 +20,12 @@ export class Nav {
     {id: 'contacto', label: 'Contacto'},
   ];
   
-  protected readonly activeId = signal('experiencia');
+  private readonly scrollSpy = inject(ScrollSpy);
+  protected readonly activeId = inject(ScrollSpy).activeId;
+
+  constructor(){
+    afterNextRender(() =>{
+      this.scrollSpy.observe(this.links.map((link) => link.id));
+    });
+  }
 }
